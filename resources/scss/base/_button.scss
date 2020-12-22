@@ -1,0 +1,33 @@
+.btnwrap {
+	position: relative;
+
+	&.twice {
+		display: flex;
+		justify-content: space-between;
+
+		button {
+			width: (289/600) * 100%;
+		}
+	}
+}
+
+.btn1 {
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	font-size: 0.875rem;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: rgba($black, 0.3) 0 0 4px;
+}
+
+.btn_primary {
+	background-color: $color-primary;
+	color: $white;
+}
+
+.btn_gray {
+	background-color: $lgray4;
+	color: $white;
+}

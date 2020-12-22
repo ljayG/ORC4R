@@ -1,0 +1,40 @@
+.inputbox {
+	input {
+		color: $color-default;
+		background-color: $white;
+		border: 1px solid $lgray3;
+		width: 100%;
+		padding: 0 10px;
+		height: 38px;
+		font-size: 0.875rem;
+		line-height: 36px;
+		border-radius: 3px;
+	}
+}
+
+.selectbox {
+	position: relative;
+
+	select {
+		color: $color-default;
+		background-color: $white;
+		border: 1px solid $lgray3;
+		width: 100%;
+		padding: 0 32px 0 10px;
+		height: 38px;
+		font-size: 0.875rem;
+		line-height: 36px;
+		border-radius: 3px;
+	}
+
+	&::after {
+		@include posiCenter("v");
+		content: "";
+		display: block;
+		right: 13px;
+		width: 13px;
+		height: 8px;
+		background: url("../images/icon/select_arr.png") no-repeat;
+		background-size: contain;
+	}
+}

@@ -1,0 +1,70 @@
+.header {
+	width: $main-width;
+	position: fixed;
+	height: 43px;
+	z-index: 8;
+}
+
+#header {
+	width: $main-width;
+	background-color: $skyBlue;
+	position: relative;
+	height: 43px;
+
+	h1 {
+		width: 108px;
+		height: 100%;
+
+		a {
+			display: block;
+			height: 100%;
+			padding: 10px 0 8px 10px;
+
+			span {
+				@include ir();
+				display: block;
+				height: 100%;
+				background-image: url("../images/common/logo.png");
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+
+	.btngnb {
+		position: absolute;
+		display: block;
+		width: 43px;
+		height: 43px;
+		top: 0;
+		right: 0;
+		padding: 18px 10px 14px;
+
+		span {
+			@include ir();
+			display: block;
+			position: relative;
+			height: 100%;
+
+			&::before,
+			&::after {
+				background-color: $white;
+				content: "";
+				display: block;
+				position: absolute;
+				width: 24px;
+				height: 2px;
+				left: 0;
+				border-radius: 2px;
+			}
+
+			&::before {
+				top: 0;
+			}
+
+			&::after {
+				bottom: 0;
+			}
+		}
+	}
+}

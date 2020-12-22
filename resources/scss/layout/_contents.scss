@@ -1,0 +1,35 @@
+.container {
+	margin-bottom: 45px;
+}
+
+#contents {
+	position: relative;
+	padding-top: 43px;
+}
+
+.inner {
+	@include marginCenter();
+	width: (600/640) * 100%;
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+.sectit1 {
+	color: $color-primary;
+	font-size: 1rem;
+	font-weight: 900;
+	text-align: center;
+}
+
+.animation-waypoint {
+	@include transition(0.4s);
+	opacity: 0;
+	transform: translateY(50px);
+
+	&.anistart {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

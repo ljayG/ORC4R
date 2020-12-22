@@ -1,0 +1,81 @@
+@mixin clearfix() {
+	&::after {
+		content: "";
+		display: block;
+		float: none;
+		clear: both;
+		height: 0;
+		font-size: 0;
+		line-height: 0;
+		visibility: hidden;
+	}
+}
+
+@mixin screenInner($maxWidth) {
+	max-width: $maxWidth;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+@mixin blind() {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	height: 0;
+	@include ir;
+}
+
+@mixin ir() {
+	color: transparent;
+	font-size: 1px;
+	line-height: 0;
+	overflow: hidden;
+}
+
+@mixin disinBlock($va) {
+	display: inline-block;
+
+	@if $va == "m" {
+		vertical-align: middle;
+	} @else if $va == "t" {
+		vertical-align: top;
+	} @else if $va == "b" {
+		vertical-align: bottom;
+	}
+}
+
+@mixin marginCenter() {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin transition($time) {
+	transition: all $time ease-in-out;
+}
+
+@mixin textOverflow() {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+@mixin posiCenter($areaPosi) {
+	@if $areaPosi == "va" {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	} @else if $areaPosi == "a" {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	} @else if $areaPosi == "v" {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+@mixin transition($time) {
+	transition: all $time ease-in-out;
+}

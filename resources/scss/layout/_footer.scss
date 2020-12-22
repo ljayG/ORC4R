@@ -1,0 +1,98 @@
+.footer {
+	background-color: $color-default;
+	padding: 20px 0 40px;
+}
+
+#footer {
+	color: $white;
+
+	h5 {
+		a {
+			@include marginCenter();
+			@include ir();
+			display: block;
+			width: 117px;
+			height: 26.5px;
+			margin-bottom: 14px;
+			background: url("../images/common/flogo.png") no-repeat;
+			background-size: contain;
+		}
+	}
+
+	.addr,
+	.copyright {
+		font-size: 0.75rem;
+		text-align: center;
+		line-height: 1.7;
+	}
+
+	.fsns {
+		@include marginCenter();
+		display: flex;
+		justify-content: space-between;
+		width: 190px;
+		margin-top: 16px;
+
+		& > li {
+			& > a {
+				@include ir();
+				display: block;
+				width: 28px;
+				height: 28px;
+				background-size: contain;
+			}
+
+			@for $i from 1 through 5 {
+				&:nth-of-type(#{$i}) {
+					& > a {
+						background-image: url("../images/icon/fsns_#{$i}.png");
+					}
+				}
+			}
+		}
+	}
+}
+
+.pagecontrols {
+	display: none;
+	position: fixed;
+	width: 57px;
+	height: 57px;
+	bottom: 175px;
+	right: 5px;
+	z-index: 6;
+
+	.btn_top {
+		border: 1px solid $lgray5;
+		background-color: rgba($lgray3, 0.4);
+		box-shadow: rgba($black, 0.1) 3px 0 4px;
+		position: relative;
+		display: block;
+		height: 100%;
+		border-radius: 50%;
+		overflow: hidden;
+
+		span {
+			@include ir();
+			@include posiCenter("va");
+			display: block;
+			width: 29px;
+			height: 17px;
+			background: url("../images/common/top_arr.png") no-repeat;
+			background-size: contain;
+		}
+	}
+}
+
+#aniFooter {
+	@include transition(0.4s);
+	opacity: 0;
+
+	&.anistart {
+		opacity: 1;
+
+		#footer {
+			opacity: 1;
+		}
+	}
+}
