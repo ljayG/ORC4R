@@ -83,3 +83,35 @@
 		}
 	}
 }
+
+.findmn {
+	display: flex;
+	justify-content: stretch;
+	margin-top: 10px;
+
+	& > li {
+		position: relative;
+		flex-basis: 50%;
+
+		&::after {
+			@include posiCenter("v");
+			background-color: $lgray4;
+			content: "";
+			display: block;
+			width: 1px;
+			height: 20px;
+			right: 0;
+		}
+
+		&:last-of-type::after {
+			display: none;
+		}
+
+		& > a {
+			color: $navy;
+			display: block;
+			text-align: center;
+			font-weight: 700;
+		}
+	}
+}

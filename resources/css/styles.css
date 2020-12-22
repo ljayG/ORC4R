@@ -97,6 +97,8 @@ img.maxw100 { max-width: 100%; }
 
 .mgt30 { margin-top: 30px; }
 
+.mgb10 { margin-bottom: 10px; }
+
 .inputbox input { color: #282828; background-color: #fff; border: 1px solid #e5e5e7; width: 100%; padding: 0 10px; height: 38px; font-size: 0.875rem; line-height: 36px; border-radius: 3px; }
 
 .selectbox { position: relative; }
@@ -232,3 +234,13 @@ img.maxw100 { max-width: 100%; }
 .memfrm > dd.flex .inputbox { width: calc(100% - 94px); }
 
 .memfrm > dd.flex .inpbtn { width: 88px; }
+
+.findmn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: stretch; -ms-flex-pack: stretch; justify-content: stretch; margin-top: 10px; }
+
+.findmn > li { position: relative; -ms-flex-preferred-size: 50%; flex-basis: 50%; }
+
+.findmn > li::after { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); background-color: #c0c4cf; content: ""; display: block; width: 1px; height: 20px; right: 0; }
+
+.findmn > li:last-of-type::after { display: none; }
+
+.findmn > li > a { color: #2b3648; display: block; text-align: center; font-weight: 700; }

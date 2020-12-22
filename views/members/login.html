@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>회원가입 &lt; 말씀의 기념비 4R Bible Challenge</title>
+	<title>로그인 &lt; 말씀의 기념비 4R Bible Challenge</title>
 	<meta name="keywords" content="오륜교회,말씀의기념비,4R,BibleChallenge,바이블챌린지">
 	<meta name="description" content="오륜교회">
 	<meta name="author" content="오륜교회">
@@ -67,15 +67,14 @@
 				</section>
 				<div class="inner">
 					<section class="memsection animation-waypoint" id="aniPoint1">
-						<h4 class="sectit1">회원가입</h4>
+						<h4 class="sectit1">로그인</h4>
 						<form>
 							<fieldset>
-								<legend>회원가입 입력폼</legend>
+								<legend>로그인 입력폼</legend>
 								<dl class="memfrm">
 									<dt><label for="userId">아이디</label></dt>
-									<dd class="flex">
+									<dd>
 										<div class="inputbox"><input id="userId" type="text"></div>
-										<div class="inpbtn"><button class="btn1 btn_gray" type="button"><span>중복확인</span></button></div>
 									</dd>
 								</dl>
 								<dl class="memfrm">
@@ -84,57 +83,17 @@
 										<div class="inputbox"><input id="userPwd" type="password"></div>
 									</dd>
 								</dl>
-								<dl class="memfrm">
-									<dt><label for="userPwdRe">비밀번호 확인</label></dt>
-									<dd>
-										<div class="inputbox"><input id="userPwdRe" type="password" placeholder="비밀번호를 다시 입력해주세요."></div>
-									</dd>
-								</dl>
-								<dl class="memfrm">
-									<dt><label for="userName">이름</label></dt>
-									<dd>
-										<div class="inputbox"><input id="userName" type="text"></div>
-									</dd>
-								</dl>
-								<dl class="memfrm">
-									<dt><label for="userPhone">전화번호</label></dt>
-									<dd>
-										<div class="inputbox"><input id="userPhone" type="tel"></div>
-									</dd>
-								</dl>
-								<dl class="memfrm">
-									<dt><label for="userDuty">직분</label></dt>
-									<dd>
-										<div class="selectbox">
-											<select id="userDuty">
-												<option value="">선택해주세요.</option>
-												<option value="">장로</option>
-												<option value="">권사</option>
-												<option value="">집사</option>
-											</select>
-										</div>
-									</dd>
-								</dl>
-								<dl class="memfrm">
-									<dt><label for="userDiocese">교구</label></dt>
-									<dd>
-										<div class="selectbox">
-											<select id="userDiocese">
-												<option value="">선택해주세요.</option>
-												<option value="">가락</option>
-												<option value="">강동</option>
-												<option value="">둔촌</option>
-											</select>
-										</div>
-									</dd>
-								</dl>
-								<div class="btnwrap twice mgt30">
-									<button class="btn1 btn_primary" type="submit"><span>가입</span></button>
-									<button class="btn1 btn_gray" type="button"><span>취소</span></button>
+								<div class="btnwrap mgt30">
+									<button class="btn1 btn_primary mgb10" type="submit"><span>로그인</span></button>
+									<a class="btn1 btn_gray" href="../members/join.html"><span>회원가입</span></a>
 								</div>
 							</fieldset>
 						</form>
 					</section>
+					<ul class="findmn">
+						<li><a href="../members/findId.html">아이디 찾기</a></li>
+						<li><a href="../members/findPwd.html">비밀번호 찾기</a></li>
+					</ul>
 				</div>
 			</div>
 		</main>
