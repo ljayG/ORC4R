@@ -47,4 +47,20 @@ $(document).ready(function () {
 			allMenu.removeClass("gnbopen");
 		}
 	});
+
+	// 탭메뉴
+	$(".tablist .tab > a").bind("click", function (e) {
+		e.preventDefault();
+
+		let $status = $(this).parent(".tab");
+		let $index = $status.attr("aria-controls");
+
+		if ($status.hasClass("current") == false) {
+			$(".tablist .tab").removeClass("current").attr("aria-selected", "false");
+			$status.addClass("current").attr("aria-selected", "true");
+		}
+
+		$(".tabpanel").addClass("noshow");
+		$(".tab_content #" + $index).removeClass("noshow");
+	});
 });

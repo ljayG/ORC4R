@@ -42,3 +42,112 @@
 		background-size: contain;
 	}
 }
+
+.checkbox {
+	position: relative;
+
+	input[type="radio"],
+	input[type="checkbox"] {
+		@include formindent();
+
+		& + label {
+			@include disinBlock("m");
+			color: $black;
+			position: relative;
+			min-height: 22px;
+			line-height: 1;
+			cursor: pointer;
+
+			&:before {
+				@include disinBlock("m");
+				@include transition(0.3s);
+				background-color: $white;
+				border: 1px solid $lgray3;
+				content: "";
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				margin: -1px 9px 0 0;
+				text-align: center;
+				border-radius: 50%;
+				box-sizing: border-box;
+				z-index: 2;
+			}
+		}
+
+		&:checked + label:before {
+			border-color: $color-primary;
+		}
+
+		&:checked + label:after {
+			@include disinBlock("m");
+			background-color: $color-primary;
+			content: "";
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			left: 0;
+			top: 50%;
+			margin: -7px 0 0 5px;
+			border-radius: 50%;
+			animation-name: scalein;
+			animation-duration: 0.3s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			z-index: 1;
+		}
+
+		&.chkmode1 {
+			& + label {
+				@include disinBlock("m");
+				@include ir();
+				border: 1px solid $lgray3;
+				position: relative;
+				width: 25px;
+				height: 25px;
+				border-radius: 3px;
+
+				&:before {
+					@include disinBlock("m");
+					@include transition(0.3s);
+					background-color: transparent;
+					border: 1px solid transparent;
+					content: "";
+					position: absolute;
+					width: 12px;
+					height: 12px;
+					line-height: 12px;
+					left: 0;
+					top: 50%;
+					margin: -7px 0 0 5px;
+					text-align: center;
+					border-radius: 50%;
+					box-sizing: border-box;
+					z-index: 1;
+				}
+			}
+
+			&:checked + label:before {
+				border-color: $red;
+			}
+
+			&:checked + label:after {
+				@include disinBlock("m");
+				background-color: $red;
+				content: "";
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				left: 0;
+				top: 50%;
+				margin: -7px 0 0 5px;
+				border-radius: 50%;
+				animation-name: scalein;
+				animation-duration: 0.3s;
+				animation-iteration-count: 1;
+				animation-fill-mode: forwards;
+				z-index: 2;
+			}
+		}
+	}
+}

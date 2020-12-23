@@ -348,6 +348,14 @@ legend,
 	@include clearfix();
 }
 
+.noshow {
+	display: none;
+}
+
+.posrel {
+	position: relative;
+}
+
 .wid100 {
 	width: 100%;
 }

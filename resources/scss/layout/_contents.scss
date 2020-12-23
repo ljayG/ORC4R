@@ -18,9 +18,44 @@
 
 .sectit1 {
 	color: $color-primary;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	font-weight: 900;
 	text-align: center;
+}
+
+.sectit2 {
+	padding-bottom: 14px;
+	font-size: 1.25rem;
+	font-weight: 900;
+}
+
+.sector1 {
+	position: relative;
+}
+
+.bordsect {
+	border-top: 2px solid $color-primary;
+}
+
+.embed_container {
+	position: relative;
+	max-width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	margin-bottom: 12px;
+	overflow: hidden;
+	z-index: 1;
+
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
 }
 
 .animation-waypoint {

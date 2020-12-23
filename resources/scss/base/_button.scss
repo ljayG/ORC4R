@@ -21,6 +21,16 @@
 	text-align: center;
 	border-radius: 4px;
 	box-shadow: rgba($black, 0.3) 0 0 4px;
+
+	&.titlein {
+		position: absolute;
+		width: auto;
+		min-width: 135px;
+		padding-left: 10px;
+		padding-right: 10px;
+		top: 0;
+		right: 0;
+	}
 }
 
 .btn_primary {
@@ -30,5 +40,10 @@
 
 .btn_gray {
 	background-color: $lgray4;
+	color: $white;
+}
+
+.btn_navy {
+	background-color: $navy;
 	color: $white;
 }

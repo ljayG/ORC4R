@@ -1,0 +1,32 @@
+.tbl1 {
+	border-top: 2px solid $color-primary;
+
+	thead {
+		th {
+			color: $color-primary;
+			border-bottom: 2px solid $skyBlue;
+			padding: 10px 5px;
+			font-size: 0.813rem;
+			text-align: center;
+		}
+	}
+	tbody {
+		td {
+			border-bottom: 1px solid $lgray5;
+			border-right: 1px solid $lgray5;
+			padding: 9px 5px;
+			font-size: 0.75rem;
+			text-align: center;
+		}
+
+		tr {
+			td:last-of-type {
+				border-right: none;
+			}
+
+			&.trcolor1 {
+				background-color: $lgray;
+			}
+		}
+	}
+}

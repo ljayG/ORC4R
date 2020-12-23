@@ -1,0 +1,70 @@
+.tabtype1 {
+	background-color: $lgray;
+	box-shadow: rgba($black, 0.2) inset 0 0 6px;
+	display: flex;
+	justify-content: space-evenly;
+	border-radius: 4px;
+	overflow: hidden;
+
+	& > li {
+		flex-basis: 50%;
+		& > a {
+			display: block;
+			padding: 5px 0;
+			text-align: center;
+			font-weight: 700;
+			border-radius: 4px;
+			overflow: hidden;
+		}
+
+		&.current {
+			& > a {
+				color: $white;
+				background-color: $skyBlue;
+				box-shadow: rgba($black, 0.1) 0 0 3px;
+			}
+		}
+	}
+}
+
+.speakwrap {
+	position: relative;
+	margin-top: 30px;
+
+	.tabtype1 {
+		position: absolute;
+		width: 160px;
+		top: 0;
+		right: 0;
+	}
+}
+
+.biblelist {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	& > li {
+		width: 72px;
+		height: 72px;
+		margin-top: 12px;
+
+		a {
+			display: flex;
+			justify-content: stretch;
+			align-content: stretch;
+			width: 100%;
+			height: 100%;
+			background: url("../images/icon/ico_bible.png") no-repeat;
+			background-size: contain;
+
+			span {
+				flex: auto;
+				align-self: center;
+				font-size: 1.375rem;
+				font-weight: 700;
+				text-align: center;
+			}
+		}
+	}
+}
