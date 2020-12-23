@@ -101,6 +101,8 @@ img.maxw100 { max-width: 100%; }
 
 .inputbox input { color: #282828; background-color: #fff; border: 1px solid #e5e5e7; width: 100%; padding: 0 10px; height: 38px; font-size: 0.875rem; line-height: 36px; border-radius: 3px; }
 
+.inputbox input[type="password"] { font-family: sans-serif; }
+
 .selectbox { position: relative; }
 
 .selectbox select { color: #282828; background-color: #fff; border: 1px solid #e5e5e7; width: 100%; padding: 0 32px 0 10px; height: 38px; font-size: 0.875rem; line-height: 36px; border-radius: 3px; }
@@ -111,7 +113,7 @@ img.maxw100 { max-width: 100%; }
 
 .btnwrap.twice { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.btnwrap.twice button { width: 48.16667%; }
+.btnwrap.twice button, .btnwrap.twice a { width: 48.16667%; }
 
 .btn1 { display: block; width: 100%; padding: 8px 0; font-size: 0.875rem; font-weight: 700; text-align: center; border-radius: 4px; -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 4px; box-shadow: rgba(0, 0, 0, 0.3) 0 0 4px; }
 
@@ -223,9 +225,9 @@ img.maxw100 { max-width: 100%; }
 
 .memfrm { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-line-pack: center; align-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: 8px; }
 
-.memfrm > dt { color: #aaa; width: 73px; padding-top: 10px; font-size: 0.75rem; font-weight: 900; }
+.memfrm > dt { color: #aaa; width: 73px; font-size: 0.75rem; font-weight: 900; }
 
-.memfrm > dt label { display: block; height: 100%; }
+.memfrm > dt label { display: block; height: 100%; padding-top: 10px; }
 
 .memfrm > dd { width: calc(100% - 75px); }
 

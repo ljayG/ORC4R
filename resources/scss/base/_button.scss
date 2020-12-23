@@ -5,7 +5,8 @@
 		display: flex;
 		justify-content: space-between;
 
-		button {
+		button,
+		a {
 			width: (289/600) * 100%;
 		}
 	}
