@@ -1,0 +1,27 @@
+.popupwrap {
+	display: none;
+}
+
+.poptype1 {
+	background-color: $white;
+	border-radius: 6px;
+	width: (542/640) * 100%;
+	max-width: 542px;
+
+	.popcontent {
+		padding: 20px;
+	}
+}
+
+.poptit1 {
+	color: $color-primary;
+	margin-bottom: 8px;
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+.poptxt1 {
+	margin-bottom: 10px;
+	font-size: 0.75rem;
+	text-align: center;
+}

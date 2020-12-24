@@ -63,4 +63,6 @@ $(document).ready(function () {
 		$(".tabpanel").addClass("noshow");
 		$(".tab_content #" + $index).removeClass("noshow");
 	});
+
+	$(".popupwrap").popup();
 });
