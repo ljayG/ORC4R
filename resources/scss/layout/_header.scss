@@ -11,6 +11,10 @@
 	position: relative;
 	height: 43px;
 
+	@at-root .fx .header & {
+		background-color: $skyBlue;
+	}
+
 	h1 {
 		width: 108px;
 		height: 100%;

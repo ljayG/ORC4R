@@ -1,0 +1,98 @@
+.main {
+	#header {
+		background-color: transparent;
+	}
+	#contents {
+		padding-top: 0;
+	}
+
+	.bibleweek {
+		margin-bottom: 12px;
+		color: $color-primary;
+		text-decoration: underline;
+		text-align: center;
+	}
+
+	.weekword {
+		font-size: 0.813rem;
+		text-align: center;
+	}
+}
+
+.mainvisual {
+	position: relative;
+	height: 100vh;
+	background: url("../images/main/visual.jpg") no-repeat;
+	background-size: cover;
+
+	h3 {
+		@include posiCenter("va");
+		width: 90%;
+		text-align: center;
+
+		p {
+			color: $white;
+			margin-bottom: 5px;
+		}
+
+		.copy {
+			margin-bottom: 8px;
+			text-align: center;
+
+			img {
+				width: 101px;
+			}
+		}
+
+		dl {
+			color: $white;
+
+			dt {
+				margin-bottom: 20px;
+				font-size: 1.563rem;
+				font-weight: 900;
+			}
+
+			dd {
+				position: relative;
+				margin-top: 20px;
+				font-size: 0.813rem;
+				text-align: center;
+
+				&::after {
+					@include posiCenter("a");
+					background-color: $white;
+					content: "";
+					display: block;
+					width: 3px;
+					height: 3px;
+					bottom: -10px;
+					border-radius: 50%;
+				}
+
+				&:last-of-type::after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.mainsector {
+	padding: 20px 0 35px;
+}
+
+.maintit {
+	color: $gray;
+	margin-bottom: 15px;
+	font-size: 1.5rem;
+	font-weight: 900;
+	text-align: center;
+
+	p {
+		color: $lgray2;
+		font-size: 0.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
