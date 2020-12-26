@@ -72,19 +72,169 @@
 
 .main_sldr {
 	border-top: 2px solid $color-primary;
+	border-bottom: 2px solid $lgray4;
 
 	.item {
 		h5 {
 			border-bottom: 1px solid $lgray4;
+			height: 40px;
 			font-weight: 900;
 			text-align: center;
+			line-height: 40px;
+		}
+
+		.sldtext {
+			padding: 15px 0 20px;
 		}
 
 		.txt1 {
-			margin-bottom: 15px;
 			color: $color-primary;
 			font-size: 0.875rem;
 			text-align: center;
+		}
+
+		.txt2 {
+			font-size: 0.875rem;
+			text-align: center;
+		}
+
+		.sldtits1 {
+			text-align: center;
+
+			span {
+				color: $color-primary;
+				border-left: 1px solid $color-primary;
+				border-right: 1px solid $color-primary;
+				display: inline-block;
+				font-size: 0.875rem;
+				text-align: center;
+				padding: 0 5px;
+				font-weight: 700;
+			}
+		}
+
+		.boxbank {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 8px;
+			background-image: url("../images/main/sld_bg4.jpg");
+			background-size: cover;
+
+			.boxicon {
+				background-color: $color-primary;
+				position: relative;
+				width: 46px;
+				height: 46px;
+
+				span {
+					@include posiCenter("va");
+					display: block;
+					width: 29px;
+					height: 33px;
+					background: url("../images/main/ico_hand.png") no-repeat;
+					background-size: contain;
+				}
+			}
+
+			.boxtxt {
+				width: calc(100% - 60px);
+				font-size: 0.875rem;
+
+				strong {
+					font-weight: 900;
+				}
+			}
+		}
+
+		.sld_ftxt {
+			color: $color-primary;
+			font-size: 1.125rem;
+			text-align: center;
+			font-weight: 700;
+
+			.sfico {
+				@include marginCenter();
+				width: 32px;
+				height: 25px;
+				margin-bottom: 3px;
+				background-image: url("../images/main/ico_bible.png");
+				background-size: contain;
+			}
+		}
+
+		.sld_dlist {
+			text-align: center;
+
+			dt,
+			dd {
+				border-bottom: 1px solid $lgray3;
+				font-size: 0.875rem;
+				padding-bottom: 15px;
+			}
+
+			dt {
+				color: $color-primary;
+			}
+
+			dd {
+				padding-top: 12px;
+
+				.bold1 {
+					margin-bottom: 4px;
+					font-size: 1rem;
+					font-weight: 900;
+				}
+			}
+		}
+	}
+
+	.slick-arrow {
+		@include ir();
+		position: absolute;
+		top: 0;
+		width: 15px;
+		height: 40px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		z-index: 4;
+
+		&.slick-prev {
+			left: 0;
+			background-image: url("../images/main/sld_arrl.png");
+		}
+
+		&.slick-next {
+			right: 0;
+			background-image: url("../images/main/sld_arrr.png");
+		}
+	}
+
+	.slick-dots {
+		position: absolute;
+		width: 100%;
+		bottom: -30px;
+		left: 0;
+		text-align: center;
+		z-index: 4;
+
+		& > li {
+			display: inline-block;
+			margin: 0 3px;
+
+			button {
+				@include ir();
+				background-color: $lgray3;
+				width: 55px;
+				height: 5px;
+			}
+
+			&.slick-active {
+				button {
+					background-color: $color-primary;
+				}
+			}
 		}
 	}
 }
