@@ -78,22 +78,26 @@
 	}
 }
 
+.videodetail {
+	display: none;
+	padding-top: 20px;
+}
+
 .biblelist {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	@include clearfix();
 
 	& > li {
-		width: 72px;
-		height: 72px;
+		float: left;
+		width: 25%;
 		margin-top: 12px;
 
 		a {
 			display: flex;
 			justify-content: stretch;
 			align-content: stretch;
-			width: 100%;
-			height: 100%;
+			width: 72px;
+			height: 72px;
+			margin: auto;
 			background: url("../images/icon/ico_bible.png") no-repeat;
 			background-size: contain;
 
@@ -104,6 +108,10 @@
 				font-weight: 700;
 				text-align: center;
 			}
+		}
+
+		&:nth-of-type(4n + 1) {
+			clear: both;
 		}
 	}
 }

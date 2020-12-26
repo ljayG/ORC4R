@@ -159,6 +159,16 @@ img.maxw100 { max-width: 100%; }
 
 .checkbox input[type="radio"].chkmode1:checked + label:after, .checkbox input[type="checkbox"].chkmode1:checked + label:after { display: inline-block; vertical-align: middle; background-color: #f15b67; content: ""; position: absolute; width: 12px; height: 12px; left: 0; top: 50%; margin: -7px 0 0 5px; border-radius: 50%; -webkit-animation-name: scalein; animation-name: scalein; -webkit-animation-duration: 0.3s; animation-duration: 0.3s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; z-index: 2; }
 
+.checkbox2 { position: relative; }
+
+.checkbox2 input[type="radio"], .checkbox2 input[type="checkbox"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+.checkbox2 input[type="radio"] + label, .checkbox2 input[type="checkbox"] + label { display: inline-block; vertical-align: middle; color: #01b3eb; position: relative; min-height: 22px; font-size: 0.875rem; line-height: 1; cursor: pointer; }
+
+.checkbox2 input[type="radio"] + label:after, .checkbox2 input[type="checkbox"] + label:after { display: inline-block; vertical-align: middle; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; background-color: #fff; border: 1px solid #e5e5e7; content: ""; width: 25px; height: 25px; line-height: 25px; margin: -1px 0 0 9px; text-align: center; border-radius: 3px; -webkit-box-sizing: border-box; box-sizing: border-box; z-index: 2; }
+
+.checkbox2 input[type="radio"]:checked + label::before, .checkbox2 input[type="checkbox"]:checked + label::before { display: block; content: ""; background-color: #f15b67; position: absolute; width: 10px; height: 10px; right: 0; top: 50%; margin: -5px 8px 0 0; border-radius: 50%; -webkit-animation-name: scalein; animation-name: scalein; -webkit-animation-duration: 0.3s; animation-duration: 0.3s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; z-index: 1; }
+
 .btnwrap { position: relative; }
 
 .btnwrap.twice { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
@@ -325,13 +335,17 @@ img.maxw100 { max-width: 100%; }
 
 .speakwrap .tabtype1 { position: absolute; width: 160px; top: 0; right: 0; }
 
-.biblelist { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.videodetail { display: none; padding-top: 20px; }
 
-.biblelist > li { width: 72px; height: 72px; margin-top: 12px; }
+.biblelist::after { content: ""; display: block; float: none; clear: both; height: 0; font-size: 0; line-height: 0; visibility: hidden; }
 
-.biblelist > li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: stretch; -ms-flex-pack: stretch; justify-content: stretch; -ms-flex-line-pack: stretch; align-content: stretch; width: 100%; height: 100%; background: url("../images/icon/ico_bible.png") no-repeat; background-size: contain; }
+.biblelist > li { float: left; width: 25%; margin-top: 12px; }
+
+.biblelist > li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: stretch; -ms-flex-pack: stretch; justify-content: stretch; -ms-flex-line-pack: stretch; align-content: stretch; width: 72px; height: 72px; margin: auto; background: url("../images/icon/ico_bible.png") no-repeat; background-size: contain; }
 
 .biblelist > li a span { -webkit-box-flex: 1; -ms-flex: auto; flex: auto; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; font-size: 1.375rem; font-weight: 700; text-align: center; }
+
+.biblelist > li:nth-of-type(4n + 1) { clear: both; }
 
 .visual_mem { position: relative; height: 248px; background: url("../images/members/visual.jpg") center; background-size: cover; }
 
@@ -381,7 +395,11 @@ img.maxw100 { max-width: 100%; }
 
 .poptit1 { color: #01b3eb; margin-bottom: 8px; font-size: 1.25rem; text-align: center; }
 
-.poptxt1 { margin-bottom: 10px; font-size: 0.75rem; text-align: center; }
+.poptxt1 { margin-bottom: 10px; font-size: 0.875rem; text-align: center; }
+
+.popimgcf { text-align: center; }
+
+.popimgcf img { width: 141px; }
 
 .main #header { background-color: transparent; }
 

@@ -78,5 +78,10 @@ $(document).ready(function () {
 		$(".tab_content #" + $index).removeClass("noshow");
 	});
 
+	$(".biblelist .anchor").bind("click", function (e) {
+		e.preventDefault();
+		$("#videoPosition").slideDown();
+	});
+
 	$(".popupwrap").popup();
 });
