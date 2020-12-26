@@ -211,7 +211,7 @@ img.maxw100 { max-width: 100%; }
 
 .gnbopen .fixmasking { opacity: 1; visibility: visible; }
 
-.footer { background-color: #282828; padding: 20px 0 40px; }
+.footer { background-color: #282828; padding: 20px 0 60px; }
 
 #footer { color: #fff; }
 
@@ -244,6 +244,26 @@ img.maxw100 { max-width: 100%; }
 #aniFooter.anistart { opacity: 1; }
 
 #aniFooter.anistart #footer { opacity: 1; }
+
+.footfixed { background-color: #fbfbfb; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 -5px 5px; box-shadow: rgba(0, 0, 0, 0.1) 0 -5px 5px; position: fixed; width: 100%; bottom: 0; z-index: 8; }
+
+.footfixed ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.footfixed ul li { width: 25%; }
+
+.footfixed ul li a { display: block; padding: 5px 0 2px; }
+
+.footfixed ul li a p { color: #aaa; font-size: 0.75rem; text-align: center; }
+
+.footfixed .fixco { margin-left: auto; margin-right: auto; width: 24px; height: 19px; background-size: contain; }
+
+.footfixed .fixco.fico1 { background-image: url("../images/common/fixmenu1.png"); }
+
+.footfixed .fixco.fico2 { background-image: url("../images/common/fixmenu2.png"); }
+
+.footfixed .fixco.fico3 { background-image: url("../images/common/fixmenu3.png"); }
+
+.footfixed .fixco.fico4 { background-image: url("../images/common/fixmenu4.png"); }
 
 .container { margin-bottom: 45px; }
 
@@ -311,13 +331,13 @@ img.maxw100 { max-width: 100%; }
 
 .visual_mem { position: relative; height: 248px; background: url("../images/members/visual.jpg") center; background-size: cover; }
 
-.visual_mem h3 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -60%); transform: translate(-50%, -60%); text-align: center; }
+.visual_mem h3 { position: absolute; width: 100%; top: 20px; text-align: center; }
 
 .visual_mem h3 p { margin-bottom: 8px; font-size: 0.875rem; font-weight: 700; }
 
 .visual_mem h3 div { margin-bottom: 5px; }
 
-.visual_mem h3 div img { width: 101px; }
+.visual_mem h3 div img { width: 77px; }
 
 .visual_mem h3 strong { display: block; font-size: 1.5rem; font-weight: 900; }
 
@@ -327,7 +347,7 @@ img.maxw100 { max-width: 100%; }
 
 .memfrm { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-line-pack: center; align-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: 8px; }
 
-.memfrm > dt { color: #aaa; width: 73px; font-size: 0.75rem; font-weight: 900; }
+.memfrm > dt { color: #aaa; width: 73px; font-size: 0.875rem; font-weight: 900; }
 
 .memfrm > dt label { display: block; height: 100%; padding-top: 10px; }
 
@@ -369,19 +389,9 @@ img.maxw100 { max-width: 100%; }
 
 .mainvisual { position: relative; height: 100vh; background: url("../images/main/visual.jpg") no-repeat; background-size: cover; }
 
-.mainvisual h3 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 90%; text-align: center; }
+.mainvisual h3 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.mainvisual h3 p { color: #fff; margin-bottom: 5px; }
-
-.mainvisual h3 .copy { margin-bottom: 8px; text-align: center; }
-
-.mainvisual h3 .copy img { width: 112px; }
-
-.mainvisual h3 dl dt { color: #18a8da; margin-bottom: 10px; font-size: 1.563rem; font-weight: 900; }
-
-.mainvisual h3 dl dt p { color: #18a8da; margin-top: 5px; font-size: 0.913rem; }
-
-.mainvisual h3 dl dd { position: relative; margin-top: 8px; font-size: 0.813rem; font-weight: 400; text-align: center; }
+.mainvisual h3 img { width: 185px; }
 
 .mainsector { padding: 20px 0 35px; }
 
@@ -389,9 +399,11 @@ img.maxw100 { max-width: 100%; }
 
 .maintit p { color: #aaa; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
 
-.mainbg1 { background: url("../images/main/inbg1.jpg") no-repeat center top; background-size: cover; }
+.maintit2 { border-top: 1px solid #d4d4d4; border-bottom: 1px solid #d4d4d4; padding: 8px 0; font-weight: 900; text-align: center; }
 
-.mainvideo { margin-top: 30px; }
+.maintit2 span { color: #01b3eb; }
+
+.mainbg1 { background: url("../images/main/inbg1.jpg") no-repeat center top; background-size: cover; }
 
 .main_sldr { border-top: 2px solid #01b3eb; }
 

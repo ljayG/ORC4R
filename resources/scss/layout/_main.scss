@@ -27,44 +27,9 @@
 
 	h3 {
 		@include posiCenter("va");
-		width: 90%;
-		text-align: center;
 
-		p {
-			color: $white;
-			margin-bottom: 5px;
-		}
-
-		.copy {
-			margin-bottom: 8px;
-			text-align: center;
-
-			img {
-				width: 112px;
-			}
-		}
-
-		dl {
-			dt {
-				color: $skyBlue2;
-				margin-bottom: 10px;
-				font-size: 1.563rem;
-				font-weight: 900;
-
-				p {
-					color: $skyBlue2;
-					margin-top: 5px;
-					font-size: 0.913rem;
-				}
-			}
-
-			dd {
-				position: relative;
-				margin-top: 8px;
-				font-size: 0.813rem;
-				font-weight: 400;
-				text-align: center;
-			}
+		img {
+			width: 185px;
 		}
 	}
 }
@@ -88,13 +53,21 @@
 	}
 }
 
+.maintit2 {
+	border-top: 1px solid $lgray5;
+	border-bottom: 1px solid $lgray5;
+	padding: 8px 0;
+	font-weight: 900;
+	text-align: center;
+
+	span {
+		color: $color-primary;
+	}
+}
+
 .mainbg1 {
 	background: url("../images/main/inbg1.jpg") no-repeat center top;
 	background-size: cover;
-}
-
-.mainvideo {
-	margin-top: 30px;
 }
 
 .main_sldr {

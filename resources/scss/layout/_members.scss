@@ -6,9 +6,8 @@
 
 	h3 {
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -60%);
+		width: 100%;
+		top: 20px;
 		text-align: center;
 
 		p {
@@ -21,7 +20,7 @@
 			margin-bottom: 5px;
 
 			img {
-				width: 101px;
+				width: 77px;
 			}
 		}
 
@@ -56,7 +55,7 @@
 	& > dt {
 		color: $lgray2;
 		width: 73px;
-		font-size: 0.75rem;
+		font-size: 0.875rem;
 		font-weight: 900;
 
 		label {
