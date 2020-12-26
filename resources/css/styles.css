@@ -225,7 +225,7 @@ img.maxw100 { max-width: 100%; }
 
 .gnbopen .fixmasking { opacity: 1; visibility: visible; }
 
-.footer { background-color: #282828; padding: 20px 0 60px; }
+.footer { background-color: #282828; padding: 20px 0 70px; }
 
 #footer { color: #fff; }
 
@@ -409,7 +409,7 @@ img.maxw100 { max-width: 100%; }
 
 .main .weekword { font-size: 0.813rem; text-align: center; }
 
-.mainvisual { position: relative; height: 100vh; background: url("../images/main/visual.jpg") no-repeat; background-size: cover; }
+.mainvisual { position: relative; height: calc(100vh - 43px); background: url("../images/main/visual.jpg") no-repeat; background-size: cover; }
 
 .mainvisual h3 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
