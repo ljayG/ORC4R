@@ -1,6 +1,8 @@
 .footer {
 	background-color: $color-default;
+	position: relative;
 	padding: 20px 0 70px;
+	z-index: 1;
 }
 
 #footer {

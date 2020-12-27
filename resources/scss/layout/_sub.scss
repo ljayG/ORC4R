@@ -115,3 +115,82 @@
 		}
 	}
 }
+
+.oathbg {
+	background: url("../images/sub/oath_bg.jpg") no-repeat center top;
+	background-size: 100% auto;
+}
+
+.subtit1 {
+	margin-bottom: 25px;
+	text-align: center;
+
+	div {
+		margin-bottom: 5px;
+
+		img {
+			width: 77px;
+		}
+	}
+
+	strong {
+		color: $gray;
+		display: block;
+		font-size: 1.5rem;
+		font-weight: 900;
+	}
+}
+
+.oathlist {
+	& > li {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.thumb {
+		@include marginCenter();
+		width: 112px;
+		height: 112px;
+		margin-bottom: 5px;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		@for $i from 1 through 4 {
+			&.tmimg#{$i} {
+				background-image: url("../images/sub/oath#{$i}.png");
+			}
+		}
+	}
+
+	h5 {
+		color: $skyBlue;
+		font-weight: 700;
+	}
+
+	.oathtxt {
+		font-size: 0.875rem;
+	}
+}
+
+.oathpri {
+	color: $color-primary;
+	margin: 20px 0 30px;
+	text-align: center;
+	font-weight: 700;
+	line-height-step: 1.6;
+
+	&::before {
+		@include marginCenter();
+		content: "";
+		display: block;
+		width: 49px;
+		height: 25px;
+		margin-bottom: 5px;
+		background: url("../images/icon/ico_hand.png") no-repeat;
+		background-size: contain;
+	}
+
+	.date {
+		margin-top: 10px;
+	}
+}
