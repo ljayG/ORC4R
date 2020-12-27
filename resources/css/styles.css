@@ -1,10 +1,10 @@
+@charset "UTF-8";
 @-webkit-keyframes scalein { 0% { opacity: 0.5;
     -webkit-transform: scale(1.5);
             transform: scale(1.5); }
   100% { opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1); } }
-
 @keyframes scalein { 0% { opacity: 0.5;
     -webkit-transform: scale(1.5);
             transform: scale(1.5); }
@@ -213,6 +213,14 @@ img.maxw100 { max-width: 100%; }
 
 .gnbopen .allmenu { -webkit-transform: translateX(0); transform: translateX(0); opacity: 1; visibility: visible; }
 
+.allmenu .myname { position: absolute; top: 10px; left: 10px; }
+
+.allmenu .myname a { color: #aaa; display: inline-block; position: relative; padding-right: 15px; font-size: 0.75rem; }
+
+.allmenu .myname a strong { color: #282828; font-weight: 700; font-size: 1rem; }
+
+.allmenu .myname a::after { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); content: ""; display: block; width: 6px; height: 10px; right: 0; background: url("../images/icon/arrow.png") no-repeat; background-size: contain; }
+
 .allmenu .allgnb { padding-top: 50px; }
 
 .allmenu .allgnb > li > strong a { color: #000; display: block; position: relative; padding: 6px 20px 6px 10px; font-weight: 700; }
@@ -380,6 +388,30 @@ img.maxw100 { max-width: 100%; }
 .oathpri::before { margin-left: auto; margin-right: auto; content: ""; display: block; width: 49px; height: 25px; margin-bottom: 5px; background: url("../images/icon/ico_hand.png") no-repeat; background-size: contain; }
 
 .oathpri .date { margin-top: 10px; }
+
+.ugandabg { background: url("../images/sub/uganda_bg.jpg") no-repeat center top; background-size: 100% auto; }
+
+.ugntxt1 { color: #414042; margin-bottom: 25px; font-size: 0.875rem; text-align: center; }
+
+.ugntxt1 strong { color: #282828; font-size: 1rem; font-weight: 700; }
+
+.ugnbox { margin-left: auto; margin-right: auto; color: #fff; background-color: #01b3eb; width: 235px; margin-bottom: 25px; padding: 14px 12px 20px; }
+
+.ugnbox .ugnico { margin-left: auto; margin-right: auto; width: 48px; height: 48px; margin-bottom: 20px; background: url("../images/icon/ico_hand2.png") no-repeat; background-size: contain; }
+
+.ugnbox ul { margin-bottom: 10px; }
+
+.ugnbox ul li { margin-bottom: 2px; font-size: 0.875rem; }
+
+.ugnbox ul li strong { font-size: 1rem; font-weight: 900; }
+
+.ugnbox .exam { color: #fff; position: relative; font-size: 0.875rem; padding-left: 36px; line-height-step: 1.6; }
+
+.ugnbox .exam::before { content: "(예시)"; display: block; position: absolute; left: 0; top: 0; }
+
+.dovetext { color: #01b3eb; font-weight: 700; text-align: center; }
+
+.dovetext::before { margin-left: auto; margin-right: auto; content: ""; display: block; width: 42px; height: 26px; margin-bottom: 6px; background: url("../images/icon/ico_dove.png") no-repeat; background-size: contain; }
 
 .visual_mem { position: relative; height: 248px; background: url("../images/members/visual.jpg") center; background-size: cover; }
 

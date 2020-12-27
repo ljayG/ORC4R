@@ -194,3 +194,86 @@
 		margin-top: 10px;
 	}
 }
+
+.ugandabg {
+	background: url("../images/sub/uganda_bg.jpg") no-repeat center top;
+	background-size: 100% auto;
+}
+
+.ugntxt1 {
+	color: $gray;
+	margin-bottom: 25px;
+	font-size: 0.875rem;
+	text-align: center;
+
+	strong {
+		color: $color-default;
+		font-size: 1rem;
+		font-weight: 700;
+	}
+}
+
+.ugnbox {
+	@include marginCenter();
+	color: $white;
+	background-color: $color-primary;
+	width: 235px;
+	margin-bottom: 25px;
+	padding: 14px 12px 20px;
+
+	.ugnico {
+		@include marginCenter();
+		width: 48px;
+		height: 48px;
+		margin-bottom: 20px;
+		background: url("../images/icon/ico_hand2.png") no-repeat;
+		background-size: contain;
+	}
+
+	ul {
+		margin-bottom: 10px;
+
+		li {
+			margin-bottom: 2px;
+			font-size: 0.875rem;
+
+			strong {
+				font-size: 1rem;
+				font-weight: 900;
+			}
+		}
+	}
+
+	.exam {
+		color: $white;
+		position: relative;
+		font-size: 0.875rem;
+		padding-left: 36px;
+		line-height-step: 1.6;
+
+		&::before {
+			content: "(예시)";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+}
+
+.dovetext {
+	color: $color-primary;
+	font-weight: 700;
+	text-align: center;
+
+	&::before {
+		@include marginCenter();
+		content: "";
+		display: block;
+		width: 42px;
+		height: 26px;
+		margin-bottom: 6px;
+		background: url("../images/icon/ico_dove.png") no-repeat;
+		background-size: contain;
+	}
+}

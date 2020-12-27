@@ -18,6 +18,37 @@
 		visibility: visible;
 	}
 
+	.myname {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+
+		a {
+			color: $lgray2;
+			display: inline-block;
+			position: relative;
+			padding-right: 15px;
+			font-size: 0.75rem;
+
+			strong {
+				color: $color-default;
+				font-weight: 700;
+				font-size: 1rem;
+			}
+
+			&::after {
+				@include posiCenter("v");
+				content: "";
+				display: block;
+				width: 6px;
+				height: 10px;
+				right: 0;
+				background: url("../images/icon/arrow.png") no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+
 	.allgnb {
 		padding-top: 50px;
 
