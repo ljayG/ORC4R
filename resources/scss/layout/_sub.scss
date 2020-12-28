@@ -104,7 +104,7 @@
 			span {
 				flex: auto;
 				align-self: center;
-				font-size: 1.375rem;
+				font-size: 1.25rem;
 				font-weight: 700;
 				text-align: center;
 			}
@@ -112,6 +112,12 @@
 
 		&:nth-of-type(4n + 1) {
 			clear: both;
+		}
+
+		&.current {
+			a span {
+				color: $color-primary;
+			}
 		}
 	}
 }
@@ -164,11 +170,12 @@
 
 	h5 {
 		color: $skyBlue;
+		font-size: 1.125rem;
 		font-weight: 700;
 	}
 
 	.oathtxt {
-		font-size: 0.875rem;
+		font-size: 1rem;
 	}
 }
 
@@ -203,12 +210,12 @@
 .ugntxt1 {
 	color: $gray;
 	margin-bottom: 25px;
-	font-size: 0.875rem;
+	font-size: 1rem;
 	text-align: center;
 
 	strong {
 		color: $color-default;
-		font-size: 1rem;
+		font-size: 1.125rem;
 		font-weight: 700;
 	}
 }
@@ -217,7 +224,7 @@
 	@include marginCenter();
 	color: $white;
 	background-color: $color-primary;
-	width: 235px;
+	width: 284px;
 	margin-bottom: 25px;
 	padding: 14px 12px 20px;
 
@@ -235,10 +242,10 @@
 
 		li {
 			margin-bottom: 2px;
-			font-size: 0.875rem;
+			font-size: 1rem;
 
 			strong {
-				font-size: 1rem;
+				font-size: 1.125rem;
 				font-weight: 900;
 			}
 		}
@@ -247,17 +254,9 @@
 	.exam {
 		color: $white;
 		position: relative;
-		font-size: 0.875rem;
-		padding-left: 36px;
-		line-height-step: 1.6;
-
-		&::before {
-			content: "(예시)";
-			display: block;
-			position: absolute;
-			left: 0;
-			top: 0;
-		}
+		font-size: 1rem;
+		padding-left: 68px;
+		line-height: 1.6;
 	}
 }
 

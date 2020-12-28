@@ -7,22 +7,22 @@
 	}
 
 	.bibleweek {
-		margin-bottom: 12px;
 		color: $color-primary;
+		margin-bottom: 12px;
+		font-weight: 900;
 		text-decoration: underline;
 		text-align: center;
 	}
 
 	.weekword {
-		font-size: 0.813rem;
 		text-align: center;
 	}
 }
 
 .mainvisual {
 	position: relative;
-	height: calc(100vh - 43px);
-	background: url("../images/main/visual.jpg") no-repeat;
+	height: 506px;
+	background: url("../images/main/visual.jpg") no-repeat center bottom;
 	background-size: cover;
 
 	h3 {
@@ -31,6 +31,66 @@
 		img {
 			width: 185px;
 		}
+
+		ul {
+			@include marginCenter();
+			width: 100px;
+			margin-top: 7px;
+
+			li {
+				font-size: 0.875rem;
+				font-weight: 400;
+				line-height: 1.6;
+				text-align: justify;
+				text-align-last: justify;
+
+				strong {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
+
+.bt_viscroll {
+	color: $white;
+	position: absolute;
+	display: block;
+	top: 435px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 5;
+
+	.arrow {
+		@include marginCenter();
+		width: 28px;
+		height: 30px;
+		margin-bottom: 8px;
+
+		span {
+			opacity: 0;
+			display: block;
+			position: absolute;
+			width: 28px;
+			height: 14px;
+			top: 0;
+			left: 50%;
+			margin-left: -14px;
+			background: url("../images/main/scroll.png") no-repeat;
+			background-size: contain;
+			animation: vanishBelow 1.6s linear infinite;
+
+			&.delay2 {
+				animation-delay: 0.5s;
+			}
+			&.delay3 {
+				animation-delay: 1s;
+			}
+		}
+	}
+
+	p {
+		font-size: 0.875rem;
 	}
 }
 
@@ -76,6 +136,7 @@
 
 	.item {
 		h5 {
+			@include ir();
 			border-bottom: 1px solid $lgray4;
 			height: 40px;
 			font-weight: 900;
@@ -212,27 +273,68 @@
 	}
 
 	.slick-dots {
+		background-color: $white;
 		position: absolute;
+		display: flex;
+		justify-content: space-between;
 		width: 100%;
-		bottom: -30px;
+		top: 0;
 		left: 0;
 		text-align: center;
 		z-index: 4;
 
 		& > li {
-			display: inline-block;
-			margin: 0 3px;
+			display: block;
+			width: 25%;
 
 			button {
 				@include ir();
-				background-color: $lgray3;
-				width: 55px;
-				height: 5px;
+				color: $lgray3;
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 39px;
+
+				&::after {
+					color: $color-default;
+					position: absolute;
+					display: block;
+					width: 100%;
+					top: 0;
+					left: 0;
+					font-size: 0.875rem;
+					line-height: 39px;
+					text-align: center;
+				}
 			}
 
 			&.slick-active {
 				button {
-					background-color: $color-primary;
+					&::after {
+						color: $color-primary;
+						font-weight: 900;
+					}
+				}
+			}
+
+			&:nth-of-type(1) {
+				button::after {
+					content: "통독 챌린지";
+				}
+			}
+			&:nth-of-type(2) {
+				button::after {
+					content: "암송 챌린지";
+				}
+			}
+			&:nth-of-type(3) {
+				button::after {
+					content: "필사 챌린지";
+				}
+			}
+			&:nth-of-type(4) {
+				button::after {
+					content: "우간다캠페인";
 				}
 			}
 		}

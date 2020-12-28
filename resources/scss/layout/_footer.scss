@@ -133,7 +133,7 @@
 		height: 19px;
 		background-size: contain;
 
-		@for $i from 1 through 4 {
+		@for $i from 1 through 5 {
 			&.fico#{$i} {
 				background-image: url("../images/common/fixmenu#{$i}.png");
 			}

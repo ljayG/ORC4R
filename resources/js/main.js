@@ -3,25 +3,19 @@ $(document).ready(function () {
 		function () {
 			$("#aniPoint1").addClass("anistart");
 		},
-		{ offset: "60%" }
+		{ offset: "80%" }
 	);
 	$("#aniPoint2").waypoint(
 		function () {
 			$("#aniPoint2").addClass("anistart");
 		},
-		{ offset: "60%" }
+		{ offset: "80%" }
 	);
 	$("#aniPoint3").waypoint(
 		function () {
 			$("#aniPoint3").addClass("anistart");
 		},
-		{ offset: "60%" }
-	);
-	$("#aniPoint4").waypoint(
-		function () {
-			$("#aniPoint4").addClass("anistart");
-		},
-		{ offset: "60%" }
+		{ offset: "80%" }
 	);
 	$("#aniFooter").waypoint(
 		function () {
@@ -33,5 +27,6 @@ $(document).ready(function () {
 	$("#mainSlider").slick({
 		dots: true,
 		adaptiveHeight: true,
+		arrows: false,
 	});
 });

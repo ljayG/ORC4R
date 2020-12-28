@@ -6,7 +6,7 @@
 			color: $color-primary;
 			border-bottom: 2px solid $skyBlue;
 			padding: 10px 5px;
-			font-size: 0.938rem;
+			font-weight: 700;
 			text-align: center;
 		}
 	}
@@ -15,8 +15,11 @@
 			border-bottom: 1px solid $lgray5;
 			border-right: 1px solid $lgray5;
 			padding: 9px 5px;
-			font-size: 0.875rem;
 			text-align: center;
+
+			&.taleft {
+				text-align: left;
+			}
 		}
 
 		tr {

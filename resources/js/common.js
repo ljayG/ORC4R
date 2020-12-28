@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 		$("html,body").animate(
 			{
-				scrollTop: $(this.hash).offset().top - 120,
+				scrollTop: $(this.hash).offset().top - 43,
 			},
 			500
 		);
@@ -80,6 +80,9 @@ $(document).ready(function () {
 
 	$(".biblelist .anchor").bind("click", function (e) {
 		e.preventDefault();
+
+		$(".biblelist li").removeClass("current");
+		$(this).parent("li").addClass("current");
 		$("#videoPosition").slideDown();
 	});
 
