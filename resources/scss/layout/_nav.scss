@@ -4,6 +4,7 @@
 	position: fixed;
 	width: (514/640) * 100%;
 	height: 100vh;
+	padding: 0 10px;
 	top: 0;
 	bottom: 0;
 	right: 0;
@@ -50,26 +51,45 @@
 	}
 
 	.allgnb {
-		padding-top: 50px;
+		margin-top: 50px;
+		border-top: 1px solid rgba($color-primary, 0.5);
 
 		& > li {
 			& > strong {
 				a {
-					color: $black;
+					color: $color-primary;
 					display: block;
 					position: relative;
-					padding: 6px 20px 6px 10px;
+					padding: 6px 0 6px;
 					font-weight: 700;
 
 					&::after {
 						@include posiCenter("v");
 						content: "";
-						display: block;
+						display: none;
 						width: 6px;
 						height: 10px;
 						right: 16px;
 						background-image: url("../images/common/arrow.png");
 						background-size: contain;
+					}
+
+					span {
+						@include disinBlock("m");
+
+						.gnbico {
+							display: block;
+							width: 18px;
+							height: 17px;
+							background-repeat: no-repeat;
+							background-size: contain;
+
+							@for $i from 1 through 9 {
+								&.gnbi#{$i} {
+									background-image: url("../images/icon/ico_gnb#{$i}.png");
+								}
+							}
+						}
 					}
 				}
 			}
@@ -82,6 +102,11 @@
 				}
 			}
 		}
+
+		& + .allgnb {
+			margin-top: 25px;
+			padding-top: 20px;
+		}
 	}
 
 	.btngnb_close {
@@ -92,7 +117,7 @@
 		height: 40px;
 		top: 0;
 		right: 0;
-		background: url("../images/common/close.png") no-repeat center;
+		background: url("../images/common/close2.png") no-repeat center;
 		background-size: 18px auto;
 	}
 }
