@@ -1,0 +1,13 @@
+.isico {
+	@include ir();
+	display: block;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	&.isi_down {
+		@include bgicon(35, 40, "../images/icon/ico_download.png");
+	}
+	&.isi_scale {
+		@include bgicon(42, 41, "../images/icon/ico_scale.png");
+	}
+}

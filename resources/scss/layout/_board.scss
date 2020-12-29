@@ -33,3 +33,82 @@
 		}
 	}
 }
+
+.weekrecite {
+	border: 1px solid $lgray5;
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+}
+
+.resitelist {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	& > li {
+		position: relative;
+		width: 45%;
+		margin-bottom: 25px;
+
+		img {
+			width: 100%;
+		}
+
+		.figscale {
+			@include transition(0.35s);
+			border: 1px solid $black;
+			position: absolute;
+			width: 0;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			visibility: hidden;
+			transform: scale(-100%);
+			z-index: 5;
+
+			.btnclose {
+				@include ir();
+				display: block;
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				top: 0;
+				right: 0;
+				background: url("../images/common/close.png") no-repeat center;
+				background-size: 18px auto;
+			}
+		}
+
+		&:nth-of-type(even) {
+			.figscale {
+				left: auto;
+				right: 0;
+			}
+		}
+
+		&.actscale {
+			.figscale {
+				width: 222%;
+				opacity: 1;
+				visibility: visible;
+				transform: scale(100%);
+			}
+		}
+	}
+
+	.fig {
+		.thumb {
+			position: relative;
+			border: 1px solid $lgray5;
+		}
+
+		figcaption {
+			@include textOverflow();
+			margin-top: 5px;
+			text-align: center;
+		}
+	}
+}

@@ -86,5 +86,17 @@ $(document).ready(function () {
 		$("#videoPosition").slideDown();
 	});
 
+	// 52주 암송리스트 스케일 조절
+	$(".resitelist .btn-actscale, .resitelist .figscale .btnclose").bind("click", function (e) {
+		let opnst = $(this).closest("li");
+
+		if (opnst.hasClass("actscale") === false) {
+			$(".resitelist li").removeClass("actscale");
+			opnst.addClass("actscale");
+		} else {
+			opnst.removeClass("actscale");
+		}
+	});
+
 	$(".popupwrap").popup();
 });

@@ -90,3 +90,9 @@
 	clip: rect(0, 0, 0, 0);
 	border: 0;
 }
+
+@mixin bgicon($wid, $hei, $url) {
+	width: $wid / 2 + px;
+	height: $hei / 2 + px;
+	background-image: url($url);
+}

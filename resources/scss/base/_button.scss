@@ -33,6 +33,26 @@
 	}
 }
 
+.btn2 {
+	background-color: rgba($white, 0.3);
+	box-shadow: rgba($black, 0.4) 0 0 5px;
+	display: block;
+	width: 36px;
+	height: 36px;
+	border: none;
+	border-radius: 7px;
+
+	.isico {
+		@include marginCenter();
+	}
+}
+
+.btnposi1 {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
 .btn_primary {
 	background-color: $color-primary;
 	color: $white;
