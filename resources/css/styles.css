@@ -519,6 +519,8 @@ img.maxw100 { max-width: 100%; }
 
 .memfrm > dd.flex .inpbtn { width: 88px; }
 
+.mypage_sect .memfrm > dt, .mypage_sect .memfrm > dd { line-height: 24px; }
+
 .findmn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: stretch; -ms-flex-pack: stretch; justify-content: stretch; margin-top: 10px; }
 
 .findmn > li { position: relative; -ms-flex-preferred-size: 50%; flex-basis: 50%; }

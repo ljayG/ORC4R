@@ -81,6 +81,13 @@
 			}
 		}
 	}
+
+	@at-root .mypage_sect & {
+		& > dt,
+		& > dd {
+			line-height: 24px;
+		}
+	}
 }
 
 .findmn {
