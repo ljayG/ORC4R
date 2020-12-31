@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 	$("#mainSlider").slick({
 		dots: true,
-		adaptiveHeight: true,
+		// adaptiveHeight: true,
 		arrows: false,
 	});
 });
