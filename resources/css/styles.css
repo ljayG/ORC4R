@@ -654,3 +654,13 @@ img.maxw100 { max-width: 100%; }
 .main_sldr .slick-dots > li:nth-of-type(3) button::after { content: "필사 챌린지"; }
 
 .main_sldr .slick-dots > li:nth-of-type(4) button::after { content: "우간다캠페인"; }
+
+.mabtn_youtb { margin-top: 12px; text-align: center; }
+
+.mabtn_youtb a { background-color: #fff; border: 1px solid #d4d4d4; display: inline-block; padding: 5px 10px; border-radius: 4px; font-size: 0.875rem; }
+
+.mabtn_youtb a span { display: inline-block; vertical-align: middle; }
+
+.mabtn_youtb a span.icyou { width: 22px; height: 16px; background: url("../images/icon/youtube_social_icon_dark.png") no-repeat; background-size: contain; }
+
+.mabtn_youtb a span + span { margin-left: 4px; }
